@@ -1,101 +1,187 @@
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-        <header>
-            
-            <div class="topo"></div>
-            <h1><img src="imagen/logo.png" alt="Logo" width="200" height="200" style="margin: 0 20px"></h1>
-            <nav>
-                <ul>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Jogos</a></li>
-                    <li><a href="">Html e Css</a></li>
-                    <li><a href="">Javascript</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        
-        <main>
-            
-            <div class="video">
-                <iframe width="80%" height="500" src="https://www.youtube.com/embed/W44HrKFTPaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-        
-            <div class="sobre">
-                <h2>Sobre Nós</h2>
-                <ul>
-                    <li>
-                        <div class="container">
-                          <img src="gui.png" alt="Guilherme Bender" width="300" height="400">
-                            <div class="overlay">
-                            <div class="text">Guilherme Bender
-                                <p class="descrição">Bolsista do programa #TeuFuturo2021</p>
-                                <p class="email">guibender_@hotmail.com</div>
-                            </div>
-                        </div>
-                    </li>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+                <meta name="viewport" content="width-device-width">
+		<title>L&P</title>
 
-                    <li>
-                        <div class="container">
-                            <img src="alice.png" alt="Alice Guzas" width="300" height="400">
-                            <div class="overlay">
-                                <div class="text"> Alice Guzas
-                                    <p class="descrição">Bolsista do programa #TeuFuturo2021</p>
-                                    <p class="email">guzasalice@gmail.com</p>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+                            <h1><img src="imagen/logo.png" width="200"></h1>
+
+				<nav>
+					<ul>
+						<li><a onclick="scrollWin(0, 550)">Squad</a></li>
+						<li><a href="">Projetos</a></li>
+						<li><a href="">Agradecimentos</a></li>
+					</ul>
+				</nav>
+			</div>
+                    
+                    
+		</header>
+
+            
+
+		<main>
+                    
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                    
+                    
+                    <section class="principal">
+                        <h2 class="titulo-principal">Sobre o Squad</h2>
+                        <ul class="squad">
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/gui.png" alt="Guilherme Bender" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Guilherme Bender</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
+                                        <div class="contato">guibender_@hotmail.com</div>
+                                    </div>                                      
                                 </div>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li> 
-                            <div class="container">  
-                                <img src="jr.png" alt="Júnior Fogassi" width="300" height="400">
-                                <div class="overlay">
-                                    <div class="text">Júnior Fogassi
-                                    <p class="descrição">Bolsista do programa #TeuFuturo2021</p>
-                                    <p class="email">jrfogassi@gmail.com</p>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/alice.png" alt="Alice Guzas" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Alice Guzas</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
+                                        <div class="contato">guzasalice@gmail.com</div>
+                                    </div>                                      
                                 </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>  
-            <div class="jogos">
-                <h2>Jogos</h2>
-                <ul id="imagem-jogo">
-                    <li><img src="pong_jr.gif" alt="Pong Jr" width="800" height="400"></li>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/jr.png" alt="Júnior Fogassi" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Júnior Fogassi</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
+                                        <div class="contato">guibender_@hotmail.com</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
 
-                    <li><img src="freeway.gif" alt="Freeway" width="800" height="400"></li>
-                </ul>
-            </div>
 
-            <div class="html_css">
-                <h2>HTML e CSS</h2>
-                <ul id="imagem-html">
-                    <li><img src="nutrição.png" alt="Tabela Nutrição" width="550" height="400"></li>
+                    <section id="projeto-pong">
+                            <h2 class="titulo-principal">Nossos Projetos</h2>
+                            
+                            <img id="pong" src="imagen/pong.gif" alt="Utensilios de um barbeiro.">
+                            <h3 class="sub-titulo-pong">Pong</h3>
+                            <p>Utilizando as ferramentas fornecidas pelo site <em><strong>Scratch</strong></em> fomos capazes de recriar um dos primeiros jogos de videogames já criados, o <strong>Pong</strong>. E após isso, fomos desafiados a fazer o Pong utilizando a linguagem de programação JavaScript</p>
 
-                    <li><img src="barbearia.png" alt="Barbearia Produtos" width="650" height="400"></li>
-                </ul>
-            </div>
+                    </section>
+                    
+                    <section id="projeto-freeway">
+                            
+                        <img id="freeway" src="imagen/freeway.gif" alt="Utensilios de um barbeiro.">
+                            <h3 class="sub-titulo-freeway">FreeWay</h3>
+                            <p>Utilizando o site <em><strong>p5.js </strong></em> recriamos outro jogo clássico, FreeWay, onde aplicamos nossos conhecimentos de JavaScript</p>
+
+                    </section>
+                    
+                    <section id="projeto-html">
+                        <img id="html" src="imagen/site.gif" alt="Utensilios de um barbeiro.">
+                            <h3 class="sub-titulo-html">Barbearia Alura</h3>
+                            <p>Após aprendermos sobre <em><strong>HTML5</strong></em> e <em><strong>CSS3</strong></em> conseguimos criar um site de uma barbearia, onde montamos uma pagina home, uma de produtos e outra de contatos</p>
+                    </section>
+                    
+                    
+                    <section class="agradecer">
+                        <h2 class="titulo-principal">Mentores e Orientadores</h2>
+                        <ul class="squad">
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/fernando.jpg" alt="Fernando Posser" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Fernando Posser Pinheiro</div>
+                                        <div class="descrição">Mentor #TeuFuturo 2021</div>
+                                        <div class="contato">fernando.pinheiro@imed.edu.br</div>
+                                        <div class="contato">linkedin.com/in/feerposser</div>                      
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/eduarda.PNG" alt="Eduarda Valduga Donadel" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Eduarda Valduga Donadel</div>
+                                        <div class="descrição">Orientadora #TeuFuturo 2021</div>
+                                        <div class="contato">1111760@imed.edu.br</div>
+                                        <div class="contato">instagram.com/donadelz</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/trace.jpg" alt="Treici" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Hairlaine Treici Freitas</div>
+                                        <div class="descrição">Mentora #TeuFuturo 2021</div>
+                                        <div class="contato">hairlaine.freitas@imed.edu.br</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/reinaldo.jpg" alt="Reinaldo Cerqueira" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Reinaldo Cerqueira</div>
+                                        <div class="descrição">Orientador #TeuFuturo 2021</div>
+                                        <div class="contato">1117804@imed.edu.br</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="alice.png" alt="Alice Guzas" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Alice Guzas</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
+                                        <div class="contato">guzasalice@gmail.com</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="jr.png" alt="Júnior Fogassi" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Júnior Fogassi</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
+                                        <div class="contato">guibender_@hotmail.com</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <img src="imagen/carla.jpg" alt="Carla Tubin" width="300" height="400">
+                                    <div class="overlay">
+                                        <div class="nome">Carla Tubin</div>
+                                        <div class="descrição">Mestre dos Magos</div>
+                                        <div class="contato">linkedin.com/in/carla-tubin-b678351b6</div>
+                                    </div>                                      
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                                      
+                </main>
             
-            <div class="javascript">
-                <h2>Javascript</h2>
-                <ul id="imagem-js">
-                    <li><img src="circulo_codigo.png" alt="Codigo Circulo" width="450" height="700"></li>
-
-                    <li id="espaco"><img src="alvo_codigo.png" alt="Código Alvo" width="400" height="700"></li>
-                </ul>
-            </div>
-        </main>
-        
-    </body>
+            
+            <script src="java.js"></script>
+	</body>
 </html>

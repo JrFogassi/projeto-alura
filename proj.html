@@ -20,8 +20,11 @@
 				<nav>
 					<ul>
 						<li><a onclick="scrollWin(0, 550)">Squad</a></li>
-						<li><a href="">Projetos</a></li>
-						<li><a href="">Agradecimentos</a></li>
+                        <li><a onclick="scrollWin(0, 1400)">Projetos</a></li>
+                        <li><a onclick="scrollWin(0, 3700)">Mentores</a></li>
+                        <li><a onclick="scrollWin(0, 5300)">Feedback</a></li>
+
+					
 					</ul>
 				</nav>
 			</div>
@@ -39,7 +42,8 @@
                     
                     
                     <section class="principal">
-                        <h2 class="titulo-principal">Sobre o Squad</h2>
+                        <h2 class="titulo-principal">SQUAD</h2>
+                        <p class="textos">Durante as primeiras semanas do curso houve uma divisão da turma entre equipes, os chamados squads, visando a interação entre colegas e capacitação para atuar em equipe. Cada squad possui um capitão que reúne as metas da semana e ajuda no que for necessário para que as mesmas sejam concluídas.</p>
                         <ul class="squad">
                             <li>
                                 <div class="container">
@@ -57,7 +61,7 @@
                                     <img src="imagen/alice.png" alt="Alice Guzas" width="300" height="400">
                                     <div class="overlay">
                                         <div class="nome">Alice Guzas</div>
-                                        <div class="descrição">Aluna #TeuFuturo 2021</div>
+                                        <div class="descrição">Bolsista #TeuFuturo 2021</div>
                                         <div class="contato">guzasalice@gmail.com</div>
                                     </div>                                      
                                 </div>
@@ -77,7 +81,7 @@
 
 
                     <section id="projeto-pong">
-                            <h2 class="titulo-principal">Nossos Projetos</h2>
+                            <h2 class="titulo-principal">PROJETOS</h2>
                             
                             <img id="pong" src="imagen/pong.gif" alt="Utensilios de um barbeiro.">
                             <h3 class="sub-titulo-pong">Pong</h3>
@@ -101,7 +105,7 @@
                     
                     
                     <section class="agradecer">
-                        <h2 class="titulo-principal">Mentores e Orientadores</h2>
+                        <h2 class="titulo-principal">MENTORES</h2>
                         <ul class="squad">
                             <li>
                                 <div class="container">
@@ -177,10 +181,31 @@
                             </li>
                         </ul>
                     </section>
+                    <section class="feedback">
+                        <h2 class="titulo-principal">FEEDBACK</h2>
+
+                        <form>
+                            <label for="nomesobrenome">Nome e sobrenome</label>
+                            <input type="text" id="nomesobrenome">
                     
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+    
+                            <label for="mensagem">Opiniões e críticas</label>
+                            <textarea cols="70" rows="10" id="mensagem" ></textarea>
+                                   
+                            <input type="submit" value="Enviar formulário" class="botao">
+                        </form>
+
+                    </section>
                                       
                 </main>
-            
+               
+                                  
+            <footer>
+                <img src="imagen/logo.png" width="200">
+                <p class="copyright"> ©Copyright Squad 1 - 2021</p>         
+            </footer>
             
             <script src="java.js"></script>
 	</body>

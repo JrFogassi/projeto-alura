@@ -90,7 +90,7 @@ nav a:hover {
   left: 50%;
 }
 
-.descri��o {
+.descrição {
     color:white;
     font-size: 20px;
     margin-top: 10px;
@@ -150,7 +150,7 @@ nav a:hover {
 }
 
 .sub-titulo-pong:after{
-    content: "?";
+    content: "🏓";
 }
 
 #pong{
@@ -200,7 +200,7 @@ nav a:hover {
 }
 
 .sub-titulo-freeway:after{
-    content: "?";
+    content: "🚗";
 }
 
 #freeway{
@@ -250,7 +250,7 @@ nav a:hover {
 }
 
 .sub-titulo-html:after{
-    content: "?";
+    content: "💈";
 }
 
 #html{
